@@ -24,7 +24,7 @@ function Section({
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
           </ButtonGroup>
         </Fade>
-        <ArrowImage src={`/images/down-arrow.svg`} />
+        <ArrowImage src={`'../../public/images/down-arrow.svg`} />
       </Buttons>
     </Wrap>
   );
@@ -42,7 +42,8 @@ const Wrap = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: ${(props) => `url('/images/${props.bgImage}')`};
+  background-image: ${(props) =>
+    `url(''../../public/images/${props.bgImage}')`};
 `;
 
 const ItemText = styled.div`
